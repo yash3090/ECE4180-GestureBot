@@ -18,12 +18,16 @@ GestureBot is a pi based robot, that is controlled through an accelerometer and 
 ## Glove SetUp
 Pin Connections for Mbed, Accelerometer, Huzzah Wifi Module, Buttons and Barrel Jack
 
-| Mbed  | Accelerometer | Huzzah Wifi module | Buttons | Barrel Jack |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Mbed  | Accelerometer | Huzzah Wifi module | Barrel Jack |
+| ------------- | ------------- | ------------- | ------------- |
+| VOUT | 3.3V |   |    |
+| PIN 9  | SDA  |   |    |
+| PIN 10 | SCL  |   |  |
+| GND  | GND  | GND  | - |
+|   |  | V+ | + |
+| PIN 27 |   | TX  | |
+| PIN 28  |   | RX  |  |
+
 
 ## Pi Robot SetUp
 
