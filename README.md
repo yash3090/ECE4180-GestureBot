@@ -64,6 +64,19 @@ _Note: An external 5v battery power supply was connnected via barrel jack to sup
 
 ## Software
 
+### Setting up the Pi
+Libraries needed:
+- Rpi.GPIO
+- Selenium
+- webdrive_manager
+- time
+
+```Python
+pip install selenium
+pip install webdriver-manager
+pip install RPi.GPIO
+```
+
 ### Software State Diagram
 
 ![Untitled Diagram](https://user-images.githubusercontent.com/55064067/166749677-1c7c8d0d-549e-48f7-9694-245ffe9050ab.jpg)
