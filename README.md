@@ -40,7 +40,6 @@ The buttons were used as Pull-Ups and were connected to PIN 16 and 17 for light 
 
 ## Pi Robot SetUp
 
-![IMG-3042](https://user-images.githubusercontent.com/55064067/166699832-2998201b-c379-4baa-879e-c15480891b1b.jpg)
 
 |Raspberry Pi 4| Dual Hbridge TB6612FNG | Motors|Barrel Jack Power|
 |-----|---------------------|-------|----------------|
@@ -59,6 +58,7 @@ The buttons were used as Pull-Ups and were connected to PIN 16 and 17 for light 
 |24|BI2||
 |18|PWMB||
 
+![IMG-3042](https://user-images.githubusercontent.com/55064067/166702682-a21bafad-8e32-477b-a039-9f003d378ad2.jpg)
 
 ## Software State Diagram
 
