@@ -40,9 +40,28 @@ The buttons were used as Pull-Ups and were connected to PIN 16 and 17 for light 
 
 ## Pi Robot SetUp
 
+![IMG-3042](https://user-images.githubusercontent.com/55064067/166699832-2998201b-c379-4baa-879e-c15480891b1b.jpg)
+
+|Raspberry Pi 4| Dual Hbridge TB6612FNG | Motors|Barrel Jack Power|
+|-----|---------------------|-------|----------------|
+||VM||+|
+|1|VCC||
+|9|GND||-|
+||A01|+|
+||A02|-|
+||B02|-|
+||B01|+|
+|12|PWMA||
+|6|AI2||
+|5|AI1||
+||STBY||+|
+|23|BI1||
+|24|BI2||
+|18|PWMB||
+
+
 ## Software State Diagram
 
-(Add text and diagram here connect it to communication below
 
 ### Communication between Glove and Pi
 The Huzzah ESP8266 WiFi module on the Mbed was used to set up a webpage on a local IP address using hotspot. The Pi was then also connected to the same WiFi hotspot. The value on the webpage was the command, which is a number ranging from 0-29. This number corresponded to a particular instruction for the Pi on what action to perform such as move forward, backward, left, right, speed control, and light control. A button on the webpage has to be pressed in order to update the command value on the page. The code on the Pi used selenium to scrape the page, read the command, and then press the button to refresh the command value. This was done every 0.05s.
