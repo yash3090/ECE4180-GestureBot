@@ -13,10 +13,10 @@ GestureBot is a pi based robot, that is controlled through an accelerometer and 
  - Mbed
  - Button x2
  - MMA8452 Accelerometer
- - Raspberry Pi (add model)
+ - Raspberry Pi 4
  - Huzzah ESP8266 WiFi module (Adafruit)
- - Motor x2
- - Dual H-Bridge (add model)
+ - Sparkfun DC Motor ROB-13302 x2
+ - Dual H-Bridge TB6612FNG
  - Barrel Jack
 
 ## Glove SetUp
