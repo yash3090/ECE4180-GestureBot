@@ -3,7 +3,11 @@ ECE 4180 Spring'22 </br>
 Team: Yash Saraiya and Siddhanth Vashista </br>
 
 ## Introduction
-GestureBot is a pi based robot, that is controlled through an accelerometer and mbed attached to a glove. The glove allows for additional features such as speed and headlights control. (add)
+GestureBot is a pi based robot, that is controlled through an accelerometer and mbed attached to a glove. The glove allows for additional features such as speed and headlights control. (add) The GestureBot is a Pi based smart robot, that is controlled through a “Smart Glove”, containing an MBED, accelerometer, and Huzzafruit WiFi module. The MBED takes in reading from the accelerometer then publishes the readings via a webpage (a number from 0-29) set up by the Huzzahfruit. This web server is then read by the Raspberry Pi on the car, which uses the number taken in to determine the command. The glove also contains 2 buttons for speed control and light control. 
+
+#### Block Diagram of system
+![Screenshot 2022-05-04 at 9 42 44 AM](https://user-images.githubusercontent.com/60718509/166694523-ae5a418f-7000-4c14-ae5e-04864e634a31.png)
+
 
 ## Hardware
  - Mbed
@@ -32,6 +36,8 @@ _Note: An external 5v power supply was connected to the barrel jack to support t
 
 The buttons were used as Pull-Ups and were connected to PIN 16 and 17 for light and speed control respectively
 ## Pi Robot SetUp
+
+## Software State Diagram
 
 ## Communication between Glove and Pi
 The Huzzah ESP8266 WiFi module on the Mbed was used to set up a webpage on a local IP address using hotspot. The Pi was then also connected to the same WiFi hotspot. The value on the webpage was the command, which is a number ranging from 0-29. This number corresponded to a particular instruction for the Pi on what action to perform such as move forward, backward, left, right, speed control, and light control. A button on the webpage had to be constantly pressed in order to update the command value on the page. The code on the Pi used selenium to scrape the page, read the command, and then press the button every to refresh the command value. This was done every 0.05s.
