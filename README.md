@@ -34,10 +34,9 @@ Pin Connections for Mbed, Accelerometer, Huzzah Wifi Module, and Barrel Jack
 
 _Note: An external 5v power supply was connected to the barrel jack to support the HUzzah wifi module as it drained too much current from the Mbed_
 
-The buttons were used as Pull-Ups and were connected to PIN 16 and 17 for light and speed control respectively!
+![Screenshot 2022-05-04 at 9 54 27 AM](https://user-images.githubusercontent.com/60718509/166696278-1db492cc-2959-4105-999f-245e807798ea.png)
 
-[IMG-3041](https://user-images.githubusercontent.com/60718509/166695590-70fa807d-f8c5-4198-9b39-4f17ad7e8497.jpg)
-
+The buttons were used as Pull-Ups and were connected to PIN 16 and 17 for light and speed control respectively
 
 ## Pi Robot SetUp
 
