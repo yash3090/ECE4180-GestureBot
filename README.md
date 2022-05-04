@@ -9,10 +9,10 @@ GestureBot is a pi based robot, that is controlled through an accelerometer and 
  - Mbed
  - Button x2
  - MMA8452 Accelerometer
- - Raspberry Pi (add model)
+ - Raspberry Pi 4
  - Huzzah ESP8266 WiFi module (Adafruit)
- - Motor x2
- - Dual H-Bridge (add model)
+ - DC Motor ROB-13302 x2
+ - Dual H-Bridge TB6612FNG
  - Barrel Jack
 
 ## Glove SetUp
@@ -32,6 +32,9 @@ _Note: An external 5v power supply was connected to the barrel jack to support t
 
 The buttons were used as Pull-Ups and were connected to PIN 16 and 17 for light and speed control respectively
 ## Pi Robot SetUp
+Pin Connection for Raspberry Pi 4, Hbridge Motor Driver and external barrel jack.
+
+
 
 ## Communication between Glove and Pi
 The Huzzah ESP8266 WiFi module on the Mbed was used to set up a webpage on a local IP address using hotspot. The Pi was then also connected to the same WiFi hotspot. The value on the webpage was the command, which is a number ranging from 0-29. This number corresponded to a particular instruction for the Pi on what action to perform such as move forward, backward, left, right, speed control, and light control. A button on the webpage had to be constantly pressed in order to update the command value on the page. The code on the Pi used selenium to scrape the page, read the command, and then press the button every to refresh the command value. This was done every 0.05s.
