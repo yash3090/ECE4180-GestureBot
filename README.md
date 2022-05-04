@@ -51,4 +51,8 @@ The Huzzah ESP8266 WiFi module on the Mbed was used to set up a webpage on a loc
 
 The image shown above is the webpage created by the Huzzah WiFi module on the Mbed and the one that is scraped by the Pi for command information
 
+## Further Work
+ - Add a raspberry pi camera to live stream what the robot is seeing onto a webserver
+ - Add an uLCD screen to the glove to keep track of statistics such as battery, speed, and distance traveled
+ - Use radio frequency chips to reduce latency
 
