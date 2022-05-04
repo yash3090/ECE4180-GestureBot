@@ -3,7 +3,7 @@ ECE 4180 Spring'22 </br>
 Team: Yash Saraiya and Siddhanth Vashista </br>
 
 ## Introduction
-GestureBot is a pi based robot, that is controlled through an accelerometer and mbed attached to a glove. The glove allows for additional features such as speed and headlights control. (add) The GestureBot is a Pi based smart robot, that is controlled through a “Smart Glove”, containing an MBED, accelerometer, and Huzzafruit WiFi module. The MBED takes in reading from the accelerometer then publishes the readings via a webpage (a number from 0-29) set up by the Huzzahfruit. This web server is then read by the Raspberry Pi on the car, which uses the number taken in to determine the command. The glove also contains 2 buttons for speed control and light control. 
+GestureBot is a pi based robot, that is controlled through an accelerometer and mbed attached to a glove. The glove allows for additional features such as speed and headlights control. (add) The GestureBot is a Pi based smart robot, that is controlled through a “Smart Glove”, containing an MBED, accelerometer, and Huzzafruit WiFi module. The MBED takes in reading from the accelerometer then publishes the readings via a webpage (a number from 0-24) set up by the Huzzahfruit. This web server is then read by the Raspberry Pi on the car, which uses the number taken in to determine the command. The glove also contains 2 buttons for speed control and light control. 
 
 #### Block Diagram of system
 ![Screenshot 2022-05-04 at 9 42 44 AM](https://user-images.githubusercontent.com/60718509/166694523-ae5a418f-7000-4c14-ae5e-04864e634a31.png)
@@ -32,7 +32,7 @@ Pin Connections for Mbed, Accelerometer, Huzzah Wifi Module, and Barrel Jack
 | PIN 27 |   | TX  | |
 | PIN 28  |   | RX  |  |
 
-_Note: An external 5v power supply was connected to the barrel jack to support the HUzzah wifi module as it drained too much current from the Mbed_
+_Note: An external 5v power supply was connected to the barrel jack to support the Huzzah wifi module as it drained too much current from the Mbed_
 
 ![Screenshot 2022-05-04 at 9 54 27 AM](https://user-images.githubusercontent.com/60718509/166696278-1db492cc-2959-4105-999f-245e807798ea.png)
 
@@ -40,6 +40,7 @@ The buttons were used as Pull-Ups and were connected to PIN 16 and 17 for light 
 
 ## Pi Robot SetUp
 
+Pin connections for Raspberry Pi 4, Dual Hbridge and Motors. 
 
 |Raspberry Pi 4| Dual Hbridge TB6612FNG | Motors|Barrel Jack Power|
 |-----|---------------------|-------|----------------|
@@ -59,8 +60,10 @@ The buttons were used as Pull-Ups and were connected to PIN 16 and 17 for light 
 |18|PWMB||
 
 ![IMG-3042](https://user-images.githubusercontent.com/55064067/166702682-a21bafad-8e32-477b-a039-9f003d378ad2.jpg)
-
+_Note: An external 5v battery power supply was connnected via barrel jack to support H-Bridge and motor drive._
 ## Software State Diagram
+
+![Untitled Diagram](https://user-images.githubusercontent.com/55064067/166749677-1c7c8d0d-549e-48f7-9694-245ffe9050ab.jpg)
 
 
 ### Communication between Glove and Pi
