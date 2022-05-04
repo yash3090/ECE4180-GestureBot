@@ -61,7 +61,10 @@ Pin connections for Raspberry Pi 4, Dual Hbridge and Motors.
 
 ![IMG-3042](https://user-images.githubusercontent.com/55064067/166702682-a21bafad-8e32-477b-a039-9f003d378ad2.jpg)
 _Note: An external 5v battery power supply was connnected via barrel jack to support H-Bridge and motor drive._
-## Software State Diagram
+
+## Software
+
+### Software State Diagram
 
 ![Untitled Diagram](https://user-images.githubusercontent.com/55064067/166749677-1c7c8d0d-549e-48f7-9694-245ffe9050ab.jpg)
 
